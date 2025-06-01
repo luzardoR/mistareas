@@ -1,0 +1,18 @@
+body{
+	background-color: #f5f5dc;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.contenedor-de-creacion-elementos{
+	width: 500px;
+	height: 200px;	
+	margin: 30px;
+	margin-top: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: white;
+}
