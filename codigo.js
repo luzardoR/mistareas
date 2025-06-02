@@ -25,20 +25,10 @@ function nuevaTarea(){
 		botonRemover.addEventListener("click",(e)=>{ e.target.parentElement.remove()});
 	}while(variable_id != "tareanueva"+x);
 
-
-	
-
 	textoTarea.innerHTML = inputValor.value;
 	botonRemover.innerHTML = "Eliminar";
 
 	tareaNueva.appendChild(textoTarea);
 	tareaNueva.appendChild(botonRemover);
 	contenedorElemento.appendChild(tareaNueva);
-	
 }
-
-
-
-// eliminarELemento.addEventListener("click",(e) => { e.target.parentElement.remove()});
-
-
