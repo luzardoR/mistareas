@@ -1,7 +1,7 @@
 const $=(e) => document.querySelector(e);
 const inputValor = $(".input-elemento");
 
-const subirElemento = $(".btn-subir");
+const subirElemento = $(".subir");
 const eliminarELemento = $(".btn-eliminar");
 
 subirElemento.addEventListener("click",nuevaTarea);
@@ -19,10 +19,14 @@ function nuevaTarea(){
 		x += 1;
 		variable_id = "tareanueva"+x;
 		tareaNueva.id = variable_id;
-		
+		tareaNueva.classList.add("cajatarea");
+		botonRemover.classList.add("btn");
+		botonRemover.classList.add("eliminar"+x);
+		botonRemover.addEventListener("click",(e)=>{ e.target.parentElement.remove()});
 	}while(variable_id != "tareanueva"+x);
 
-	botonRemover.classList.add("btn-eliminar");
+
+	
 
 	textoTarea.innerHTML = inputValor.value;
 	botonRemover.innerHTML = "Eliminar";
@@ -33,10 +37,8 @@ function nuevaTarea(){
 	
 }
 
-eliminarELemento.addEventListener("click",eliminarTarea);
 
-function eliminarTarea(){
 
-	alert("este es: "+eliminarELemento.parentElement);
-}
+// eliminarELemento.addEventListener("click",(e) => { e.target.parentElement.remove()});
+
 
