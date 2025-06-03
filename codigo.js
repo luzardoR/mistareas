@@ -2,7 +2,6 @@ const $=(e) => document.querySelector(e);
 const inputValor = $(".input-elemento");
 
 const subirElemento = $(".subir");
-const eliminarELemento = $(".btn-eliminar");
 
 subirElemento.addEventListener("click",nuevaTarea);
 let x = 0;
